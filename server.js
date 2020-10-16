@@ -7,7 +7,7 @@ App.get('/', (req, res) => {
 })
 
 App.get('/luna', (req, res) => {
-    res.sendFile('luna.jpg')
+    res.sendFile(  path.join(__dirname,'luna.jpg'))
 })
 
 App.delete('/', (req, res) => {
